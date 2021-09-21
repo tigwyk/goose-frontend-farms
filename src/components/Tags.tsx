@@ -14,19 +14,19 @@ const RiskTag = ({ risk }) => (
 )
 
 const CoreTag = () => (
-  <Tag variant='secondary' outline startIcon={<VerifiedIcon />}>
+  <Tag variant="secondary" outline startIcon={<VerifiedIcon />}>
     Core
   </Tag>
 )
 
 const CommunityTag = () => (
-  <Tag variant='textSubtle' outline startIcon={<CommunityIcon />}>
+  <Tag variant="textSubtle" outline startIcon={<CommunityIcon />}>
     Community
   </Tag>
 )
 
 const PolygonTag = () => (
-  <Tag variant='polygon' outline startIcon={<BinanceIcon />}>
+  <Tag variant="polygon" outline startIcon={<BinanceIcon />}>
     Polygon
   </Tag>
 )

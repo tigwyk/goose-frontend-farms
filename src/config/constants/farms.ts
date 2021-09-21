@@ -8,12 +8,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'PULL-BUSD LP',
     lpAddresses: {
       137: '',
-      80001:'0xDAbd64fcBA5c3eDF30B7939CC41bdD804E5668f8',
+      80001: '0xDAbd64fcBA5c3eDF30B7939CC41bdD804E5668f8',
     },
     tokenSymbol: 'PULL',
     tokenAddresses: {
       137: '0xB44cf912E9D0341e92f64f4a0642393B7f3526C4',
-      80001:'0xB44cf912E9D0341e92f64f4a0642393B7f3526C4',
+      80001: '0xB44cf912E9D0341e92f64f4a0642393B7f3526C4',
     },
     quoteTokenSymbol: QuoteToken.USDC,
     quoteTokenAdresses: contracts.usdc,
