@@ -26,7 +26,7 @@ const CommunityTag = () => (
 )
 
 const PolygonTag = () => (
-  <Tag variant="polygon" outline startIcon={<BinanceIcon />}>
+  <Tag variant="binance" outline startIcon={<BinanceIcon />}>
     Polygon
   </Tag>
 )
