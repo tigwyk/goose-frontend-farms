@@ -25,10 +25,10 @@ const CommunityTag = () => (
   </Tag>
 )
 
-const BinanceTag = () => (
-  <Tag variant='binance' outline startIcon={<BinanceIcon />}>
-    Binance
+const PolygonTag = () => (
+  <Tag variant='polygon' outline startIcon={<BinanceIcon />}>
+    Polygon
   </Tag>
 )
 
-export { CoreTag, CommunityTag, BinanceTag, RiskTag, NoFeeTag }
+export { CoreTag, CommunityTag, PolygonTag, RiskTag, NoFeeTag }

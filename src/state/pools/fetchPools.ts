@@ -1,10 +1,10 @@
 import poolsConfig from 'config/constants/pools'
 import sousChefABI from 'config/abi/sousChef.json'
-import cakeABI from 'config/abi/cake.json'
-import wbnbABI from 'config/abi/weth.json'
+import silkABI from 'config/abi/SilkToken.json'
+import maticABI from 'config/abi/weth.json'
 import { QuoteToken } from 'config/constants/types'
 import multicall from 'utils/multicall'
-import { getWbnbAddress } from 'utils/addressHelpers'
+import { getWmaticAddress } from 'utils/addressHelpers'
 import BigNumber from 'bignumber.js'
 
 const CHAIN_ID = process.env.REACT_APP_CHAIN_ID
@@ -39,8 +39,8 @@ export const fetchPoolsBlockLimits = async () => {
 }
 
 export const fetchPoolsTotalStatking = async () => {
-  const nonBnbPools = poolsConfig.filter((p) => p.stakingTokenName !== QuoteToken.BNB)
-  const bnbPool = poolsConfig.filter((p) => p.stakingTokenName === QuoteToken.BNB)
+  const nonBnbPools = poolsConfig.filter((p) => p.stakingTokenName !== QuoteToken.MATIC)
+  const bnbPool = poolsConfig.filter((p) => p.stakingTokenName === QuoteToken.MATIC)
 
   const callsNonBnbPools = nonBnbPools.map((poolConfig) => {
     return {
@@ -52,14 +52,14 @@ export const fetchPoolsTotalStatking = async () => {
 
   const callsBnbPools = bnbPool.map((poolConfig) => {
     return {
-      address: getWbnbAddress(),
+      address: getWmaticAddress(),
       name: 'balanceOf',
       params: [poolConfig.contractAddress[CHAIN_ID]],
     }
   })
 
-  const nonBnbPoolsTotalStaked = await multicall(cakeABI, callsNonBnbPools)
-  const bnbPoolsTotalStaked = await multicall(wbnbABI, callsBnbPools)
+  const nonBnbPoolsTotalStaked = await multicall(silkABI, callsNonBnbPools)
+  const bnbPoolsTotalStaked = await multicall(maticABI, callsBnbPools)
 
   return [
     ...nonBnbPools.map((p, index) => ({

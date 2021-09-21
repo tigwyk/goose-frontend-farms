@@ -1,6 +1,6 @@
 import BigNumber from 'bignumber.js'
 import erc20ABI from 'config/abi/erc20.json'
-import masterchefABI from 'config/abi/masterchef.json'
+import masterchefABI from 'config/abi/MasterChefV2.json'
 import multicall from 'utils/multicall'
 import farmsConfig from 'config/constants/farms'
 import { getMasterChefAddress } from 'utils/addressHelpers'

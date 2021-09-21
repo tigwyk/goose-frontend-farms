@@ -30,17 +30,17 @@ const Farm: React.FC = () => {
 
   const priceToBnb = (tokenName: string, tokenPrice: BigNumber, quoteToken: QuoteToken): BigNumber => {
     const tokenPriceBN = new BigNumber(tokenPrice)
-    if (tokenName === 'BNB') {
+    if (tokenName === 'MATIC') {
       return new BigNumber(1)
     }
-    if (tokenPrice && quoteToken === QuoteToken.BUSD) {
+    if (tokenPrice && quoteToken === QuoteToken.USDC) {
       return tokenPriceBN.div(bnbPriceUSD)
     }
     return tokenPriceBN
   }
 
   const poolsWithApy = pools.map((pool) => {
-    const isBnbPool = pool.poolCategory === PoolCategory.BINANCE
+    const isBnbPool = pool.poolCategory === PoolCategory.POLYGON
     const rewardTokenFarm = farms.find((f) => f.tokenSymbol === pool.tokenName)
     const stakingTokenFarm = farms.find((s) => s.tokenSymbol === pool.stakingTokenName)
 

@@ -5,11 +5,11 @@ import { getBalanceNumber } from 'utils/formatBalance'
 import useI18n from 'hooks/useI18n'
 import { ChevronDown, ChevronUp } from 'react-feather'
 import Balance from 'components/Balance'
-import { CommunityTag, CoreTag, BinanceTag } from 'components/Tags'
+import { CommunityTag, CoreTag, PolygonTag } from 'components/Tags'
 import { PoolCategory } from 'config/constants/types'
 
 const tags = {
-  [PoolCategory.BINANCE]: BinanceTag,
+  [PoolCategory.POLYGON]: PolygonTag,
   [PoolCategory.CORE]: CoreTag,
   [PoolCategory.COMMUNITY]: CommunityTag,
 }
