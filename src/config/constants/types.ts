@@ -20,23 +20,23 @@ export interface Ifo {
 }
 
 export enum QuoteToken {
-  'BNB' = 'BNB',
-  'CAKE' = 'CAKE',
+  'MATIC' = 'MATIC',
+  'SILK' = 'SILK',
   'SYRUP' = 'SYRUP',
-  'BUSD' = 'BUSD',
-  'TWT' = 'TWT',
+  'USDC' = 'USDC',
+  'DAI' = 'DAI',
   'UST' = 'UST',
 }
 
 export enum PoolCategory {
   'COMMUNITY' = 'Community',
   'CORE' = 'Core',
-  'BINANCE' = 'Binance', // Pools using native BNB behave differently than pools using a token
+  'POLYGON' = 'Polygon', // Pools using native MATIC behave differently than pools using a token
 }
 
 export interface Address {
-  97?: string
-  56: string
+  80001?: string
+  137: string
 }
 
 export interface FarmConfig {
