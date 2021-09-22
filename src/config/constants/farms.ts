@@ -3,7 +3,7 @@ import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
   {
-    pid: 0,
+    pid: 2,
     risk: 5,
     lpSymbol: 'PULL-USDC LP',
     lpAddresses: {
@@ -19,7 +19,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.usdc,
   },
   {
-    pid: 2,
+    pid: 1,
     risk: 3,
     lpSymbol: 'MATIC-USDC LP',
     lpAddresses: {
