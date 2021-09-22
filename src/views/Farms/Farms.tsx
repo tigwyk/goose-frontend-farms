@@ -95,11 +95,11 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
     <Page>
       <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
         {tokenMode
-          ? TranslateString(10002, 'Stake tokens to earn EGG')
-          : TranslateString(320, 'Stake LP tokens to earn EGG')}
+          ? TranslateString(10002, 'Stake tokens to earn PULL')
+          : TranslateString(320, 'Stake LP tokens to earn PULL')}
       </Heading>
       <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
-        {TranslateString(10000, 'Deposit Fee will be used to buyback EGG')}
+        {TranslateString(10000, 'Deposit Fee will be used to buyback PULL')}
       </Heading>
       <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} />
       <div>
@@ -113,7 +113,6 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           </Route>
         </FlexLayout>
       </div>
-      <Image src="/images/egg/8.png" alt="illustration" width={1352} height={587} responsive />
     </Page>
   )
 }
