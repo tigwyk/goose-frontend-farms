@@ -1,6 +1,6 @@
 import { AbiItem } from 'web3-utils'
 import poolsConfig from 'config/constants/pools'
-import masterChefABI from 'config/abi/MasterChefV2.json'
+import masterChefABI from 'config/abi/RugKing.json'
 import sousChefABI from 'config/abi/sousChef.json'
 import erc20ABI from 'config/abi/erc20.json'
 import { QuoteToken } from 'config/constants/types'

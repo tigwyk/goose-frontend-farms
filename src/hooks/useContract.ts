@@ -11,7 +11,7 @@ import rabbitmintingfarm from 'config/abi/rabbitmintingfarm.json'
 import pancakeRabbits from 'config/abi/pancakeRabbits.json'
 import lottery from 'config/abi/lottery.json'
 import lotteryTicket from 'config/abi/lotteryNft.json'
-import masterChef from 'config/abi/MasterChefV2.json'
+import masterChef from 'config/abi/RugKing.json'
 import sousChef from 'config/abi/sousChef.json'
 import sousChefBnb from 'config/abi/sousChefBnb.json'
 
