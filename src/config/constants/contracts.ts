@@ -49,7 +49,7 @@ export default {
   },
   wban: {
     137: '0xe20b9e246db5a0d21bf9209e4858bc9a3ff7a034',
-    80001: '',
+    80001: '0x2058a9d7613eee744279e3856ef0eada5fcbaa7e',
     97: '',
     56: '',
   },
