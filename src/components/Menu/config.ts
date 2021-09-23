@@ -73,15 +73,15 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Github',
-        href: 'https://github.com/goosedefi/',
+        href: 'https://github.com/RugPullForSure',
       },
       {
         label: 'Docs',
-        href: 'https://goosedefi.gitbook.io/goose-finance/',
+        href: 'https://docs.rugpull.best/',
       },
       {
         label: 'Blog',
-        href: 'https://goosefinance.medium.com/',
+        href: 'https://rugpullforsure.medium.com/',
       },
     ],
   },
