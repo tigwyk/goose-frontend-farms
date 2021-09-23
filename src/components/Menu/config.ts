@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://bazaar.rugpull.best/',
+        href: 'https://app.sushi.com/swap',
       },
       {
         label: 'Liquidity',
-        href: 'https://bazaar.rugpull.best/#/pool',
+        href: 'https://app.sushi.com/pool',
       },
     ],
   },
