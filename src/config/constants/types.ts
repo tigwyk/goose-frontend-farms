@@ -36,7 +36,9 @@ export enum PoolCategory {
 
 export interface Address {
   80001?: string
-  137: string
+  137?: string
+  56?: string
+  97?: string
 }
 
 export interface FarmConfig {
