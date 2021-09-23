@@ -26,6 +26,7 @@ export enum QuoteToken {
   'USDC' = 'USDC',
   'DAI' = 'DAI',
   'UST' = 'UST',
+  'wBAN' = 'wBAN',
 }
 
 export enum PoolCategory {
