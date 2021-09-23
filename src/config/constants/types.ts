@@ -21,7 +21,7 @@ export interface Ifo {
 
 export enum QuoteToken {
   'MATIC' = 'MATIC',
-  'SILK' = 'SILK',
+  'PULL' = 'PULL',
   'SYRUP' = 'SYRUP',
   'USDC' = 'USDC',
   'DAI' = 'DAI',

@@ -159,13 +159,13 @@
     {
       "data": {
         "stringId": 338,
-        "text": "The Sous Chef is cooking up a treat for all SILK holders"
+        "text": "The Sous Chef is cooking up a treat for all PULL holders"
       }
     },
     {
       "data": {
         "stringId": 340,
-        "text": "SILK Tokens Staked"
+        "text": "PULL Tokens Staked"
       }
     },
     {
@@ -177,7 +177,7 @@
     {
       "data": {
         "stringId": 344,
-        "text": "Stake your SILK to earn tokens of new projects."
+        "text": "Stake your PULL to earn tokens of new projects."
       }
     },
     {
@@ -243,7 +243,7 @@
     {
       "data": {
         "stringId": 380,
-        "text": "1000 PULL = 1 SILK"
+        "text": "1000 PULL = 1 PULL"
       }
     },
     {
@@ -285,19 +285,19 @@
     {
       "data": {
         "stringId": 394,
-        "text": "Unstake SILK"
+        "text": "Unstake PULL"
       }
     },
     {
       "data": {
         "stringId": 400,
-        "text": "SILK holders proportionally split 25% of PULL block emissions each day (10 PULL per block), Rewards are distributed each block."
+        "text": "PULL holders proportionally split 25% of PULL block emissions each day (10 PULL per block), Rewards are distributed each block."
       }
     },
     {
       "data": {
         "stringId": 402,
-        "text": "Stake SILK to earn new tokens."
+        "text": "Stake PULL to earn new tokens."
       }
     },
     {
@@ -549,7 +549,7 @@
     {
       "data": {
         "stringId": 496,
-        "text": "SILK holders proportionally split 40% of PULL block emissions each day (10 PULL per block), Rewards are distributed each block."
+        "text": "PULL holders proportionally split 40% of PULL block emissions each day (10 PULL per block), Rewards are distributed each block."
       }
     },
     {
