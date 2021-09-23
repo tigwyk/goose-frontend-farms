@@ -768,7 +768,7 @@
               "type": "uint64"
             }
           ],
-          "internalType": "struct MasterChefV2.PoolInfo",
+          "internalType": "struct RugKing.PoolInfo",
           "name": "pool",
           "type": "tuple"
         }

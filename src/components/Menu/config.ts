@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://bazaar.rugpull.best/',
+        href: 'https://app.sushi.com/swap',
       },
       {
         label: 'Liquidity',
-        href: 'https://bazaar.rugpull.best/#/pool',
+        href: 'https://app.sushi.com/pool',
       },
     ],
   },
@@ -50,8 +50,8 @@ const config: MenuEntry[] = [
     icon: 'InfoIcon',
     items: [
       {
-        label: 'PancakeSwap',
-        href: 'https://pancakeswap.info/token/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
+        label: 'SushiSwap',
+        href: 'https://analytics-polygon.sushi.com/tokens/0xb44cf912e9d0341e92f64f4a0642393b7f3526c4',
       },
       {
         label: 'CoinGecko',
@@ -73,15 +73,15 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Github',
-        href: 'https://github.com/goosedefi/',
+        href: 'https://github.com/RugPullForSure',
       },
       {
         label: 'Docs',
-        href: 'https://goosedefi.gitbook.io/goose-finance/',
+        href: 'https://docs.rugpull.best/',
       },
       {
         label: 'Blog',
-        href: 'https://goosefinance.medium.com/',
+        href: 'https://rugpullforsure.medium.com/',
       },
     ],
   },
@@ -91,16 +91,16 @@ const config: MenuEntry[] = [
   //   href:
   //    'https://docs.google.com/forms/d/e/1FAIpQLSe7ycrw8Dq4C5Vjc9WNlRtTxEhFDB1Ny6jlAByZ2Y6qBo7SKg/viewform?usp=sf_link',
   // },
-  {
-    label: 'Audit by Hacken',
-    icon: 'AuditIcon',
-    href: 'https://www.goosedefi.com/files/hackenAudit.pdf',
-  },
-  {
-    label: 'Audit by CertiK',
-    icon: 'AuditIcon',
-    href: 'https://certik.org/projects/goose-finance',
-  },
+  // {
+  //  label: 'Audit by Hacken',
+  //  icon: 'AuditIcon',
+  //  href: 'https://www.goosedefi.com/files/hackenAudit.pdf',
+  // },
+  // {
+  // label: 'Audit by CertiK',
+  //  icon: 'AuditIcon',
+  //  href: 'https://certik.org/projects/goose-finance',
+  // },
 ]
 
 export default config

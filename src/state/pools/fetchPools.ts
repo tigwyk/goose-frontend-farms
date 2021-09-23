@@ -1,6 +1,6 @@
 import poolsConfig from 'config/constants/pools'
 import sousChefABI from 'config/abi/sousChef.json'
-import silkABI from 'config/abi/SilkToken.json'
+import pullABI from 'config/abi/RugPullForSure.json'
 import maticABI from 'config/abi/weth.json'
 import { QuoteToken } from 'config/constants/types'
 import multicall from 'utils/multicall'
@@ -58,7 +58,7 @@ export const fetchPoolsTotalStatking = async () => {
     }
   })
 
-  const nonBnbPoolsTotalStaked = await multicall(silkABI, callsNonBnbPools)
+  const nonBnbPoolsTotalStaked = await multicall(pullABI, callsNonBnbPools)
   const bnbPoolsTotalStaked = await multicall(maticABI, callsBnbPools)
 
   return [

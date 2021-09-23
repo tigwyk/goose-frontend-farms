@@ -7,7 +7,7 @@ import { Address } from 'config/constants/types'
 
 export interface ExpandableSectionProps {
   isTokenOnly?: boolean
-  bscScanAddress?: string
+  blockexplorerAddress?: string
   removed?: boolean
   totalValueFormated?: string
   lpLabel?: string
@@ -37,7 +37,7 @@ const StyledLinkExternal = styled(LinkExternal)`
 
 const DetailsSection: React.FC<ExpandableSectionProps> = ({
   isTokenOnly,
-  bscScanAddress,
+  blockexplorerAddress,
   removed,
   totalValueFormated,
   lpLabel,
@@ -55,8 +55,8 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
         <StyledLinkExternal
           href={
             isTokenOnly
-              ? `https://exchange.goosedefi.com/#/swap/${tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
-              : `https://exchange.goosedefi.com/#/add/${liquidityUrlPathParts}`
+              ? `https://app.sushi.com/swap/${tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
+              : `https://app.sushi.com/add/${liquidityUrlPathParts}`
           }
         >
           {lpLabel}
@@ -69,8 +69,8 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
         </Flex>
       )}
       <Flex justifyContent="flex-start">
-        <Link external href={bscScanAddress} bold={false}>
-          {TranslateString(356, 'View on BscScan')}
+        <Link external href={blockexplorerAddress} bold={false}>
+          {TranslateString(356, 'View on Blockchain Explorer')}
         </Link>
       </Flex>
     </Wrapper>

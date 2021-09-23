@@ -11,7 +11,8 @@ import rabbitmintingfarm from 'config/abi/rabbitmintingfarm.json'
 import pancakeRabbits from 'config/abi/pancakeRabbits.json'
 import lottery from 'config/abi/lottery.json'
 import lotteryTicket from 'config/abi/lotteryNft.json'
-import masterChef from 'config/abi/MasterChefV2.json'
+import masterChef from 'config/abi/RugKing.json'
+import sushiLP from 'config/abi/sushi_lp.json'
 import sousChef from 'config/abi/sousChef.json'
 import sousChefBnb from 'config/abi/sousChefBnb.json'
 
@@ -67,6 +68,11 @@ export const useLotteryTicket = () => {
 export const useMasterchef = () => {
   const abi = (masterChef as unknown) as AbiItem
   return useContract(abi, getMasterChefAddress())
+}
+
+export const useSushiLP = (address: string) => {
+  const sushiAbi = (sushiLP as unknown) as AbiItem
+  return useContract(sushiAbi, address)
 }
 
 export const useSousChef = (id) => {

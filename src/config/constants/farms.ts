@@ -19,6 +19,22 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.usdc,
   },
   {
+    pid: 2,
+    risk: 3,
+    lpSymbol: 'PULL-wBAN LP',
+    lpAddresses: {
+      137: '0x6B98a63Aad9a4234b5Fa68a9979Ef511816F470D',
+      80001: '0x1b96b92314c44b159149f7e0303511fb2fc4774f',
+    },
+    tokenSymbol: 'PULL',
+    tokenAddresses: {
+      137: '0xB44cf912E9D0341e92f64f4a0642393B7f3526C4',
+      80001: '0xB44cf912E9D0341e92f64f4a0642393B7f3526C4',
+    },
+    quoteTokenSymbol: QuoteToken.wBAN,
+    quoteTokenAdresses: contracts.wban,
+  },
+  {
     pid: 1,
     risk: 3,
     lpSymbol: 'MATIC-USDC LP',

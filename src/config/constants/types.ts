@@ -21,11 +21,12 @@ export interface Ifo {
 
 export enum QuoteToken {
   'MATIC' = 'MATIC',
-  'SILK' = 'SILK',
+  'PULL' = 'PULL',
   'SYRUP' = 'SYRUP',
   'USDC' = 'USDC',
   'DAI' = 'DAI',
   'UST' = 'UST',
+  'wBAN' = 'wBAN',
 }
 
 export enum PoolCategory {
@@ -36,7 +37,9 @@ export enum PoolCategory {
 
 export interface Address {
   80001?: string
-  137: string
+  137?: string
+  56?: string
+  97?: string
 }
 
 export interface FarmConfig {
