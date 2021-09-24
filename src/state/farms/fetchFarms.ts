@@ -72,7 +72,7 @@ const fetchFarms = async () => {
       } else {
         // Ratio in % a LP tokens that are in staking, vs the total number in circulation
         console.log('lpTotalSupply: ', lpTotalSupply)
-        console.log('lpTokenBalanceMC: ',lpTokenBalanceMC)
+        console.log('lpTokenBalanceMC: ', lpTokenBalanceMC)
         const lpTokenRatio = new BigNumber(lpTokenBalanceMC).div(new BigNumber(lpTotalSupply))
         console.log('lpTokenRatio: ', lpTokenRatio)
         // Total value in staking in quote token value
