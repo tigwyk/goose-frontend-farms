@@ -68,16 +68,17 @@ export const usePoolFromPid = (sousId): Pool => {
 // Prices
 
 export const usePriceBnbBusd = (): BigNumber => {
-  console.log('Entering usePriceBnbBusd...')
+  console.log('********* START usePriceBnbBusd *********')
   const pid = 1 // USDC-MATIC LP
   const farm = useFarmFromPid(pid)
   console.log('MATIC Farm: ', farm)
   console.log('farm.tokenPriceVsQuote: ', farm.tokenPriceVsQuote)
+  console.log('********* END usePriceBnbBusd *********')
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
 export const usePriceCakeBusd = (): BigNumber => {
-  console.log('Entering usePriceCakeBusd...')
+  console.log('********* START usePriceCakeBusd **********')
   // const pid = 1 // CAKE-BNB LP
   // const bnbPriceUSD = usePriceBnbBusd()
   // const farm = useFarmFromPid(pid)
@@ -86,6 +87,7 @@ export const usePriceCakeBusd = (): BigNumber => {
   const farm = useFarmFromPid(pid)
   console.log('PULL Farm: ', farm)
   console.log('farm.tokenPriceVsQuote: ', farm.tokenPriceVsQuote)
+  console.log('********** END usePriceCakeBusd **********')
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 

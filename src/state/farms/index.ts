@@ -38,9 +38,11 @@ export const { setFarmsPublicData, setFarmUserData } = farmsSlice.actions
 
 // Thunks
 export const fetchFarmsPublicDataAsync = () => async (dispatch) => {
+  console.log('************FETCHFARM*******************')
   console.log('Fetching farm public data...')
   const farms = await fetchFarms()
   console.log('Farms: ', farms)
+  console.log('**********ENDFETCHFARM******************')
   dispatch(setFarmsPublicData(farms))
 }
 export const fetchFarmUserDataAsync = (account) => async (dispatch) => {

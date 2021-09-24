@@ -109,8 +109,11 @@ const fetchFarms = async () => {
           name: 'pullPerBlock',
         },
       ])
+      console.log('*****************************************************')
       console.log('Made multi-call to get poolInfo, allocs, pullPerBlock')
       console.log('info: ', info)
+      console.log('*****************************************************')
+
       const allocPoint = new BigNumber(info.allocPoint._hex)
       const poolWeight = allocPoint.div(new BigNumber(totalAllocPoint))
 
