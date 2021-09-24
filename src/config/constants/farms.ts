@@ -50,6 +50,22 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.USDC,
     quoteTokenAdresses: contracts.usdc,
   },
+  {
+    pid: 3,
+    risk: 3,
+    lpSymbol: 'WMATIC-USDC LP',
+    lpAddresses: {
+      137: '0x6e7a5fafcec6bb1e78bae2a1f0b612012bf14827',
+      80001: '0x1b96b92314c44b159149f7e0303511fb2fc4774f',
+    },
+    tokenSymbol: 'WMATIC',
+    tokenAddresses: {
+      137: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270',
+      80001: '0x0000000000000000000000000000000000001010',
+    },
+    quoteTokenSymbol: QuoteToken.USDC,
+    quoteTokenAdresses: contracts.usdc,
+  },
 ]
 
 export default farms

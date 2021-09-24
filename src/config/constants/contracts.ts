@@ -12,7 +12,7 @@ export default {
     56: '',
   },
   wmatic: {
-    137: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
+    137: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270',
     80001: '0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889',
     97: '',
     56: '',
