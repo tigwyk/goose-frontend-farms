@@ -29,7 +29,7 @@ export default {
     97: '',
     56: '',
   },
-  mulltiCall: {
+  multiCall: {
     137: '0x1ee38d535d541c55c9dae27b12edf090c608e6fb',
     80001: '0x3836d8a95c84623042faD318D3A78E0d99e1FF2C',
     97: '',

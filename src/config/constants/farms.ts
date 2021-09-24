@@ -8,7 +8,8 @@ const farms: FarmConfig[] = [
     lpSymbol: 'PULL-USDC LP',
     lpAddresses: {
       137: '0x72dEf214b363D646F0abA67717A9a8412212f916',
-      80001: '0x4d2438dac888ff432563b28D7c9634D6406c62B2',
+      // 80001: '0x4d2438dac888ff432563b28D7c9634D6406c62B2',
+      80001: '0xDAbd64fcBA5c3eDF30B7939CC41bdD804E5668f8',
     },
     tokenSymbol: 'PULL',
     tokenAddresses: {
@@ -24,7 +25,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'PULL-wBAN LP',
     lpAddresses: {
       137: '0x6B98a63Aad9a4234b5Fa68a9979Ef511816F470D',
-      80001: '0x1b96b92314c44b159149f7e0303511fb2fc4774f',
+      80001: '0x1B96B92314C44b159149f7E0303511fB2Fc4774f',
     },
     tokenSymbol: 'PULL',
     tokenAddresses: {
@@ -45,7 +46,7 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'WMATIC',
     tokenAddresses: {
       137: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270',
-      80001: '0x0000000000000000000000000000000000001010',
+      80001: '0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889',
     },
     quoteTokenSymbol: QuoteToken.USDC,
     quoteTokenAdresses: contracts.usdc,
