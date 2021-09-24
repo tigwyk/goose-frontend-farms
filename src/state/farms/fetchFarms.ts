@@ -12,29 +12,29 @@ const fetchFarms = async () => {
   console.log('Entering fetchFarms...')
   const data = await Promise.all(
     farmsConfig.map(async (farmConfig) => {
-      const lpAdress = farmConfig.lpAddresses[CHAIN_ID]
+      const lpAddress = farmConfig.lpAddresses[CHAIN_ID]
       const calls = [
         // Balance of token in the LP contract
         {
           address: farmConfig.tokenAddresses[CHAIN_ID],
           name: 'balanceOf',
-          params: [lpAdress],
+          params: [lpAddress],
         },
         // Balance of quote token on LP contract
         {
           address: farmConfig.quoteTokenAdresses[CHAIN_ID],
           name: 'balanceOf',
-          params: [lpAdress],
+          params: [lpAddress],
         },
         // Balance of LP tokens in the master chef contract
         {
-          address: farmConfig.isTokenOnly ? farmConfig.tokenAddresses[CHAIN_ID] : lpAdress,
+          address: farmConfig.isTokenOnly ? farmConfig.tokenAddresses[CHAIN_ID] : lpAddress,
           name: 'balanceOf',
           params: [getMasterChefAddress()],
         },
         // Total supply of LP tokens
         {
-          address: lpAdress,
+          address: lpAddress,
           name: 'totalSupply',
         },
         // Token decimals
