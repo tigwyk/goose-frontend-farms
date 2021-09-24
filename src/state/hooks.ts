@@ -71,6 +71,7 @@ export const usePriceBnbBusd = (): BigNumber => {
   console.log('Entering usePriceBnbBusd...')
   const pid = 1 // USDC-MATIC LP
   const farm = useFarmFromPid(pid)
+  console.log('MATIC Farm: ',farm)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
@@ -82,7 +83,8 @@ export const usePriceCakeBusd = (): BigNumber => {
   // return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO
   const pid = 0 // PULL-USDC LP
   const farm = useFarmFromPid(pid)
-  console.log(farm)
+  console.log('PULL Farm: ',farm)
+  console.log('farm.tokenPriceVsQuote: ',farm.tokenPriceVsQuote)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
