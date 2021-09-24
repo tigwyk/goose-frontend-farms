@@ -72,6 +72,7 @@ export const usePriceBnbBusd = (): BigNumber => {
   const pid = 1 // USDC-MATIC LP
   const farm = useFarmFromPid(pid)
   console.log('MATIC Farm: ', farm)
+  console.log('farm.tokenPriceVsQuote: ', farm.tokenPriceVsQuote)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
