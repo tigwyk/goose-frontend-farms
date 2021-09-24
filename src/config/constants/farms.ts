@@ -35,22 +35,6 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wban,
   },
   {
-    pid: 1,
-    risk: 3,
-    lpSymbol: 'MATIC-USDC LP',
-    lpAddresses: {
-      137: '0x6e7a5FAFcec6BB1e78bAE2A1F0B612012BF14827',
-      80001: '0x1b96b92314c44b159149f7e0303511fb2fc4774f',
-    },
-    tokenSymbol: 'MATIC',
-    tokenAddresses: {
-      137: '0x0000000000000000000000000000000000001010',
-      80001: '0x0000000000000000000000000000000000001010',
-    },
-    quoteTokenSymbol: QuoteToken.USDC,
-    quoteTokenAdresses: contracts.usdc,
-  },
-  {
     pid: 3,
     risk: 3,
     lpSymbol: 'WMATIC-USDC LP',
