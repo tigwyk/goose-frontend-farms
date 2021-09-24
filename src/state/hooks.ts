@@ -69,7 +69,7 @@ export const usePoolFromPid = (sousId): Pool => {
 
 export const usePriceBnbBusd = (): BigNumber => {
   console.log('********* START usePriceBnbBusd *********')
-  const pid = 1 // USDC-MATIC LP
+  const pid = 3 // USDC-MATIC LP
   const farm = useFarmFromPid(pid)
   console.log('MATIC Farm: ', farm)
   console.log('farm.tokenPriceVsQuote: ', farm.tokenPriceVsQuote)
