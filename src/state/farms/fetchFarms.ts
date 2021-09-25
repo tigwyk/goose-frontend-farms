@@ -9,7 +9,6 @@ import { QuoteToken } from '../../config/constants/types'
 const CHAIN_ID = process.env.REACT_APP_CHAIN_ID
 
 const fetchFarms = async () => {
-  console.log('Entering fetchFarms...')
   const data = await Promise.all(
     farmsConfig.map(async (farmConfig) => {
       const lpAddress = farmConfig.lpAddresses[CHAIN_ID]
@@ -71,10 +70,7 @@ const fetchFarms = async () => {
         lpTotalInQuoteToken = tokenAmount.times(tokenPriceVsQuote)
       } else {
         // Ratio in % a LP tokens that are in staking, vs the total number in circulation
-        console.log('lpTotalSupply: ', lpTotalSupply)
-        console.log('lpTokenBalanceMC: ', lpTokenBalanceMC)
         const lpTokenRatio = new BigNumber(lpTokenBalanceMC).div(new BigNumber(lpTotalSupply))
-        console.log('lpTokenRatio: ', lpTokenRatio)
         // Total value in staking in quote token value
         lpTotalInQuoteToken = new BigNumber(quoteTokenBlanceLP)
           .div(new BigNumber(10).pow(18))
@@ -109,10 +105,6 @@ const fetchFarms = async () => {
           name: 'pullPerBlock',
         },
       ])
-      console.log('*****************************************************')
-      console.log('Made multi-call to get poolInfo, allocs, pullPerBlock')
-      console.log('info: ', info)
-      console.log('*****************************************************')
 
       const allocPoint = new BigNumber(info.allocPoint._hex)
       const poolWeight = allocPoint.div(new BigNumber(totalAllocPoint))
