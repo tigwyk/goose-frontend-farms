@@ -51,7 +51,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wban,
   },
   {
-    pid: 4,
+    pid: 3,
     risk: 3,
     lpSymbol: 'WMATIC-USDC LP',
     lpAddresses: {
