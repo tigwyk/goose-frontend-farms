@@ -18,7 +18,7 @@ export const getAllowance = async (
 ): Promise<string> => {
   try {
     const allowance: string = await lpContract.methods.allowance(account, masterChefContract.options.address).call()
-    console.log('Allowance: ',allowance)
+    console.log('Allowance: ', allowance)
     return allowance
   } catch (e) {
     return '0'

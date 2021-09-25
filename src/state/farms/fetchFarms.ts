@@ -48,7 +48,7 @@ const fetchFarms = async () => {
           name: 'decimals',
         },
       ]
-      console.log("Multicalls: ", calls)
+      console.log('Multicalls: ', calls)
       const [
         tokenBalanceLP,
         quoteTokenBlanceLP,
