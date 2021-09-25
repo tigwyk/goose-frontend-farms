@@ -7,7 +7,7 @@ export default {
   },
   masterChef: {
     137: '0xa48Aa82A450C06058e35Ceb6F9848fD646C00AA7',
-    80001: '0x0Cc7f5FF384d056AdDe6C74488244b5856E17971',
+    80001: '0xf63E990903d727D6035e78a570B4c1D6EdFe08d3',
     97: '',
     56: '',
   },
@@ -40,6 +40,12 @@ export default {
     80001: '0x2058a9d7613eee744279e3856ef0eada5fcbaa7e',
     97: '',
     56: '',
+  },
+  dai: {
+    137: '',
+    80001: '0x001b3b4d0f3714ca98ba10f6042daebf0b1b7b6f',
+    97: '',
+    56: ''
   },
   weth: {
     137: '0x8cc8538d60901d19692F5ba22684732Bc28F54A3',

@@ -25,7 +25,6 @@ export enum QuoteToken {
   'SYRUP' = 'SYRUP',
   'USDC' = 'USDC',
   'DAI' = 'DAI',
-  'UST' = 'UST',
   'wBAN' = 'wBAN',
 }
 
