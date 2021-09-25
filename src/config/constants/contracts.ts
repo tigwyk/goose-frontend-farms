@@ -30,8 +30,8 @@ export default {
     56: '',
   },
   multiCall: {
-    137: '0x1ee38d535d541c55c9dae27b12edf090c608e6fb',
-    80001: '0x3836d8a95c84623042faD318D3A78E0d99e1FF2C',
+    137: '0xE8BBa3Cc3f72cDd8B19527665a5d20262BD30352',
+    80001: '0xe78d2630ed8d6D9959F802d3851a597cb684f3B5',
     97: '',
     56: '',
   },
@@ -49,7 +49,7 @@ export default {
   },
   wban: {
     137: '0xe20b9e246db5a0d21bf9209e4858bc9a3ff7a034',
-    80001: '0x2058a9d7613eee744279e3856ef0eada5fcbaa7e',
+    80001: '0xe0d8e46f7d42b5dd46d025a9b93071d572b90470',
     97: '',
     56: '',
   },

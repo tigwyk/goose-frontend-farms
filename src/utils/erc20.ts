@@ -3,6 +3,7 @@ import { provider as ProviderType } from 'web3-core'
 import { Contract } from 'web3-eth-contract'
 import { AbiItem } from 'web3-utils'
 import erc20 from 'config/abi/erc20.json'
+import { createNextState } from '@reduxjs/toolkit'
 
 export const getContract = (provider: ProviderType, address: string) => {
   const web3 = new Web3(provider)
@@ -17,6 +18,7 @@ export const getAllowance = async (
 ): Promise<string> => {
   try {
     const allowance: string = await lpContract.methods.allowance(account, masterChefContract.options.address).call()
+    console.log('Allowance: ',allowance)
     return allowance
   } catch (e) {
     return '0'
@@ -31,6 +33,8 @@ export const getTokenBalance = async (
   const contract = getContract(provider, tokenAddress)
   try {
     const balance: string = await contract.methods.balanceOf(userAddress).call()
+    console.log('Token balance for ', userAddress)
+    console.log(balance)
     return balance
   } catch (e) {
     return '0'
