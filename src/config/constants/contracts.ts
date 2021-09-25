@@ -43,7 +43,7 @@ export default {
     56: '',
   },
   dai: {
-    137: '',
+    137: '0x8f3cf7ad23cd3cadbd9735aff958023239c6a063',
     80001: '0x001b3b4d0f3714ca98ba10f6042daebf0b1b7b6f',
     97: '',
     56: '',
