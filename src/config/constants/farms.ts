@@ -55,7 +55,8 @@ const farms: FarmConfig[] = [
     risk: 3,
     lpSymbol: 'WMATIC-USDC LP',
     lpAddresses: {
-      137: '0x6e7a5fafcec6bb1e78bae2a1f0b612012bf14827',
+      // 137: '0x6e7a5fafcec6bb1e78bae2a1f0b612012bf14827',
+      137: '0xcd353F79d9FADe311fC3119B841e1f456b54e858',
       80001: '0x482fa68527705ADC49A79B880fd2389fB03eb813',
     },
     tokenSymbol: 'WMATIC',
