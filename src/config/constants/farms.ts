@@ -19,7 +19,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.usdc,
   },
   {
-    pid: 1,
+    pid: 2,
     risk: 3,
     lpSymbol: 'PULL-wBAN LP',
     lpAddresses: {
