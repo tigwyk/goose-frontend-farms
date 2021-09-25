@@ -11,7 +11,7 @@ import TwitterCard from './components/TwitterCard'
 
 const Hero = styled.div`
   align-items: center;
-  background-image: url('/images/egg/rugpull_with_text_250px.png');
+  background-image: url('/images/egg/rugpull_100px.png');
   background-repeat: no-repeat;
   background-position: top center;
   display: flex;
