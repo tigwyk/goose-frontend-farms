@@ -23,7 +23,7 @@ const farms: FarmConfig[] = [
     risk: 3,
     lpSymbol: 'PULL-DAI LP',
     lpAddresses: {
-      137: '',
+      137: '0xdba7917a6b726Fcb95200DaC8235f73D499341a4',
       80001: '0x6B6c4CaAbC6AF0Cc2B9cf638d2478B4Cf4b6D9D8',
     },
     tokenSymbol: 'PULL',

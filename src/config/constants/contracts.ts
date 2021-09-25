@@ -6,7 +6,8 @@ export default {
     56: '',
   },
   masterChef: {
-    137: '0xa48Aa82A450C06058e35Ceb6F9848fD646C00AA7',
+    // 137: '0xa48Aa82A450C06058e35Ceb6F9848fD646C00AA7',
+    137: '0x04475e6a5570D671772Fb9bA56A78E8f0ba96c26',
     80001: '0xf63E990903d727D6035e78a570B4c1D6EdFe08d3',
     97: '',
     56: '',
