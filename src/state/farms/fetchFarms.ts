@@ -7,6 +7,7 @@ import farmsConfig from 'config/constants/farms'
 import { QuoteToken } from '../../config/constants/types'
 
 const CHAIN_ID = process.env.REACT_APP_CHAIN_ID
+const ZERO = new BigNumber(0)
 
 const fetchFarms = async () => {
   const data = await Promise.all(
@@ -107,6 +108,7 @@ const fetchFarms = async () => {
       ])
 
       const allocPoint = new BigNumber(info.allocPoint._hex)
+      console.log('totalAllocPoint: ',totalAllocPoint)
       console.log('allocPoint: ', allocPoint)
       const poolWeight = allocPoint.div(new BigNumber(totalAllocPoint))
 
@@ -118,7 +120,7 @@ const fetchFarms = async () => {
         tokenPriceVsQuote: tokenPriceVsQuote.toJSON(),
         poolWeight: poolWeight.toNumber(),
         multiplier: `${allocPoint.div(100).toString()}X`,
-        depositFeeBP: info.depositFeeBP,
+        depositFeeBP: info.depositFeeBP ? info.depositFeeBP : 0,
         pullPerBlock: new BigNumber(pullPerBlock).toNumber(),
       }
     }),
