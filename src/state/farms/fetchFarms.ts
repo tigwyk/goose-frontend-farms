@@ -48,7 +48,7 @@ const fetchFarms = async () => {
           name: 'decimals',
         },
       ]
-      console.log('Multicalls: ', calls)
+      
       const [
         tokenBalanceLP,
         quoteTokenBlanceLP,
@@ -107,12 +107,8 @@ const fetchFarms = async () => {
         },
       ])
 
-      const allocPoint = new BigNumber(info.allocPoint._hex)
-      console.log('totalAllocPoint: ', new BigNumber(totalAllocPoint))
-      console.log('allocPoint: ', Object.keys(allocPoint))
+      const allocPoint = new BigNumber(info.allocPoint._hex)      
       const poolWeight = allocPoint.div(new BigNumber(totalAllocPoint))
-      console.log('poolWeight: ', poolWeight)
-      console.log('multiplier: ', allocPoint.div(100).toString())
 
       return {
         ...farmConfig,
