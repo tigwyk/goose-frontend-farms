@@ -25,7 +25,7 @@ const Menu = (props) => {
       setLang={setSelectedLanguage}
       cakePriceUsd={cakePriceUsd.toNumber()}
       links={config}
-      priceLink="https://www.coingecko.com/en/coins/rugpull"
+      priceLink="https://analytics-polygon.sushi.com/tokens/0xb44cf912e9d0341e92f64f4a0642393b7f3526c4"
       {...props}
     />
   )

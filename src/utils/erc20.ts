@@ -3,6 +3,7 @@ import { provider as ProviderType } from 'web3-core'
 import { Contract } from 'web3-eth-contract'
 import { AbiItem } from 'web3-utils'
 import erc20 from 'config/abi/erc20.json'
+import { createNextState } from '@reduxjs/toolkit'
 
 export const getContract = (provider: ProviderType, address: string) => {
   const web3 = new Web3(provider)

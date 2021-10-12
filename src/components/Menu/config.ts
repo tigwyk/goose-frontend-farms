@@ -12,7 +12,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://app.sushi.com/swap',
+        href: 'https://app.sushi.com/swap?outputCurrency=0xb44cf912e9d0341e92f64f4a0642393b7f3526c4',
       },
       {
         label: 'Liquidity',
@@ -54,16 +54,12 @@ const config: MenuEntry[] = [
         href: 'https://analytics-polygon.sushi.com/tokens/0xb44cf912e9d0341e92f64f4a0642393b7f3526c4',
       },
       {
-        label: 'CoinGecko',
-        href: 'https://www.coingecko.com/en/coins/goose-finance',
+        label: 'Rugpull Website',
+        href: 'https://rugpull.best',
       },
       {
-        label: 'CoinMarketCap',
-        href: 'https://coinmarketcap.com/currencies/goose-finance/',
-      },
-      {
-        label: 'AstroTools',
-        href: 'https://app.astrotools.io/pancake-pair-explorer/0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
+        label: 'PULL Faucet',
+        href: 'https://faucet.rugpull.best',
       },
     ],
   },
