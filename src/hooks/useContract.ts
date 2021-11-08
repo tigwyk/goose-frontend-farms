@@ -2,15 +2,13 @@ import { useEffect, useState } from 'react'
 import { AbiItem } from 'web3-utils'
 import { ContractOptions } from 'web3-eth-contract'
 import useWeb3 from 'hooks/useWeb3'
-import { getMasterChefAddress, getCakeAddress, getLotteryAddress, getLotteryTicketAddress } from 'utils/addressHelpers'
+import { getMasterChefAddress, getCakeAddress } from 'utils/addressHelpers'
 import { poolsConfig } from 'config/constants'
 import { PoolCategory } from 'config/constants/types'
 import ifo from 'config/abi/ifo.json'
 import erc20 from 'config/abi/erc20.json'
 import rabbitmintingfarm from 'config/abi/rabbitmintingfarm.json'
 import pancakeRabbits from 'config/abi/pancakeRabbits.json'
-import lottery from 'config/abi/lottery.json'
-import lotteryTicket from 'config/abi/lotteryNft.json'
 import masterChef from 'config/abi/RugKing.json'
 import sushiLP from 'config/abi/sushi_lp.json'
 import sousChef from 'config/abi/sousChef.json'
@@ -53,16 +51,6 @@ export const useRabbitMintingFarm = (address: string) => {
 export const usePancakeRabbits = (address: string) => {
   const pancakeRabbitsAbi = pancakeRabbits as unknown as AbiItem
   return useContract(pancakeRabbitsAbi, address)
-}
-
-export const useLottery = () => {
-  const abi = lottery as unknown as AbiItem
-  return useContract(abi, getLotteryAddress())
-}
-
-export const useLotteryTicket = () => {
-  const abi = lotteryTicket as unknown as AbiItem
-  return useContract(abi, getLotteryTicketAddress())
 }
 
 export const useMasterchef = () => {
