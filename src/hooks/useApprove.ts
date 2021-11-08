@@ -5,7 +5,7 @@ import { ethers } from 'ethers'
 import { useDispatch } from 'react-redux'
 import { updateUserAllowance, fetchFarmUserDataAsync } from 'state/actions'
 import { approve } from 'utils/callHelpers'
-import { useMasterchef, useCake, useSousChef} from './useContract'
+import { useMasterchef, useCake, useSousChef } from './useContract'
 
 // Approve a Farm
 export const useApprove = (lpContract: Contract) => {
