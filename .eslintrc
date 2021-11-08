@@ -11,12 +11,18 @@
     "browser": true,
     "jest": true
   },
-  "extends": "@pancakeswap-libs/eslint-config-pancake",
+  "extends": [
+    "@pancakeswap-libs/eslint-config-pancake"
+  ],
   "rules": {
     "no-console": ["warn", { "allow": ["info", "warn", "error"] }],
     "no-plusplus": 0,
     "prefer-destructuring": ["warn", { "object": true, "array": false }],
     "no-underscore-dangle": 0,
+    "@typescript-eslint/no-unused-vars": "off",
+    "no-unused-vars": "off",
+    "react/default-props-match-prop-types":"off",
+    "react/no-unused-prop-types":"off",
     // Start temporary rules
     // These rules are here just to keep the lint error to 0 during the migration to the new rule set
     // They need to be removed and fixed as soon as possible
@@ -24,8 +30,9 @@
     "@typescript-eslint/no-use-before-define": 0,
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "@typescript-eslint/no-explicit-any": 0,
+    "react/require-default-props": [0, { "forbidDefaultForRequired": false, "ignoreFunctionalComponents": false }],
     "radix": 0,
-    "import/no-extraneous-dependencies": 0
+    "import/no-extraneous-dependencies": 0,
     // End temporary rules
   }
 }
