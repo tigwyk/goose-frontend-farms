@@ -20,9 +20,9 @@ const Menu = (props) => {
       logout={reset}
       isDark={isDark}
       toggleTheme={toggleTheme}
-      // currentLang={selectedLanguage && selectedLanguage.code}
-      // langs={allLanguages}
-      // setLang={setSelectedLanguage}
+      currentLang={selectedLanguage && selectedLanguage.code}
+      langs={allLanguages}
+      setLang={setSelectedLanguage}
       cakePriceUsd={cakePriceUsd.toNumber()}
       links={config}
       priceLink="https://analytics-polygon.sushi.com/tokens/0xb44cf912e9d0341e92f64f4a0642393b7f3526c4"
