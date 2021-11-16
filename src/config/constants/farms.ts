@@ -53,13 +53,13 @@ const farms: FarmConfig[] = [
   {
     pid: 3,
     risk: 3,
-    lpSymbol: 'WMATIC-USDC LP',
+    lpSymbol: 'MATIC-USDC LP',
     lpAddresses: {
       // 137: '0x6e7a5fafcec6bb1e78bae2a1f0b612012bf14827',
       137: '0xcd353F79d9FADe311fC3119B841e1f456b54e858',
       80001: '0x482fa68527705ADC49A79B880fd2389fB03eb813',
     },
-    tokenSymbol: 'WMATIC',
+    tokenSymbol: 'MATIC',
     tokenAddresses: {
       137: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270',
       80001: '0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889',
