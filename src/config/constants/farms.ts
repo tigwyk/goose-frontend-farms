@@ -5,18 +5,18 @@ const farms: FarmConfig[] = [
   {
     pid: 0,
     risk: 3,
-    lpSymbol: 'PULL-USDC LP',
+    lpSymbol: 'USDC-PULL LP',
     lpAddresses: {
       137: '0x72dEf214b363D646F0abA67717A9a8412212f916',
       80001: '0x4d2438dac888ff432563b28D7c9634D6406c62B2',
     },
-    tokenSymbol: 'PULL',
+    tokenSymbol: 'USDC',
     tokenAddresses: {
-      137: '0xB44cf912E9D0341e92f64f4a0642393B7f3526C4',
+      137: contracts.usdc,
       80001: '0xB44cf912E9D0341e92f64f4a0642393B7f3526C4',
     },
-    quoteTokenSymbol: QuoteToken.USDC,
-    quoteTokenAdresses: contracts.usdc,
+    quoteTokenSymbol: QuoteToken.PULL,
+    quoteTokenAdresses: contracts.pull,
   },
   {
     pid: 1,
