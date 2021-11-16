@@ -1,3 +1,4 @@
+import { getWmaticAddress } from 'utils/addressHelpers'
 import contracts from './contracts'
 import { FarmConfig, QuoteToken } from './types'
 
@@ -51,7 +52,7 @@ const farms: FarmConfig[] = [
       80001: '0x482fa68527705ADC49A79B880fd2389fB03eb813',
     },
     tokenSymbol: 'MATIC',
-    tokenAddresses: contracts.matic,
+    tokenAddresses: getWmaticAddress(),
     quoteTokenSymbol: QuoteToken.USDC,
     quoteTokenAdresses: contracts.usdc,
   },
