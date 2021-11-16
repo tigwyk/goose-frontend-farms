@@ -116,6 +116,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
       return cakePrice.times(farm.lpTotalInQuoteToken)
     }
     console.log('farm.lpTotalInQuoteToken:', farm.lpTotalInQuoteToken)
+    console.log('farm.quoteTokenSymbol:',farm.quoteTokenSymbol)
     return farm.lpTotalInQuoteToken
   }, [bnbPrice, cakePrice, farm.lpTotalInQuoteToken, farm.quoteTokenSymbol])
 
