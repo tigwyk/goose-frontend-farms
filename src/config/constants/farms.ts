@@ -11,10 +11,7 @@ const farms: FarmConfig[] = [
       80001: '0x4d2438dac888ff432563b28D7c9634D6406c62B2',
     },
     tokenSymbol: 'USDC',
-    tokenAddresses: {
-      137: contracts.usdc,
-      80001: '0xB44cf912E9D0341e92f64f4a0642393B7f3526C4',
-    },
+    tokenAddresses: contracts.usdc,
     quoteTokenSymbol: QuoteToken.PULL,
     quoteTokenAdresses: contracts.pull,
   },
