@@ -108,11 +108,14 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
       return null
     }
     if (farm.quoteTokenSymbol === QuoteToken.MATIC) {
+      // console.log('farm.lpTotalInQuoteToken * bnbPrice:', bnbPrice.times(farm.lpTotalInQuoteToken))
       return bnbPrice.times(farm.lpTotalInQuoteToken)
     }
     if (farm.quoteTokenSymbol === QuoteToken.PULL) {
+      // console.log('farm.lpTotalInQuoteToken * cakePrice:', cakePrice.times(farm.lpTotalInQuoteToken))
       return cakePrice.times(farm.lpTotalInQuoteToken)
     }
+    // console.log('farm.lpTotalInQuoteToken:', farm.lpTotalInQuoteToken, farm.quoteTokenSymbol)
     return farm.lpTotalInQuoteToken
   }, [bnbPrice, cakePrice, farm.lpTotalInQuoteToken, farm.quoteTokenSymbol])
 
